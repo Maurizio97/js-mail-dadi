@@ -8,20 +8,20 @@ const guestList = ["maurizio" , "boolean@libero.it"];
 const result = document.querySelector("#result")
 //chiedo all'utente la sua email
 const userMail = prompt("Scrivimi la tua mail");
-
-let found = 0;
+// di base found è falso
+let found = 0; 
 
 //confronto l'email dell'utente con quelle della lista
 for (let i = 0; i < guestList.length; i++ ){
     let subscribers = guestList[i];
 
     if (subscribers == userMail) {
-        //controllo se la mail corrisponde 
+        //controllo se la mail corrisponde. Se corrisponde trasformo found da falso a vero
         found = 1;
     }
 }
-
-if (found) {
+    
+if (found) { //found è vero? //questa è la forma contratta di found === true o found === 1
     //se corrisponde scrivo sei in lista
     console.log("Matching strings!");
     result.innerHTML = "sei in lista";
