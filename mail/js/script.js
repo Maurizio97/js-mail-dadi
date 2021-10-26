@@ -5,7 +5,7 @@ Qui, come detto, NON possiamo usare metodi nuovi sugli array ma lo facciamo con 
 //lista degli utenti
 const guestList = ["maurizio" , "boolean@libero.it" , "a"];
 //contenitore per l'esito 
-const esito = document.querySelector("#esito")
+const result = document.querySelector("#result")
 //chiedo all'utente la sua email
 const userMail = prompt("Scrivimi la tua mail");
 console.log("utente", userMail);
@@ -14,19 +14,15 @@ console.log("utente", userMail);
 for (let i = 0; i < guestList.length; i++ ){
     let subscribers = guestList[i];
     console.log( "log", guestList[i], "variabile", subscribers); 
+}
 
     if (subscribers === userMail) {
         //se l'utente è in lista gli dico "sei in lista"
         console.log("Matching strings!");
-        esito.innerHTML = "sei in lista";
+        result.innerHTML = "sei in lista";
     } else {
         // se l'utente non è in lista gli dico: "non sei in lista
-        esito.innerHTML = "non sei in lista";
+        result.innerHTML = "non sei in lista";
     }
    
 
-
-
-
-
-}
