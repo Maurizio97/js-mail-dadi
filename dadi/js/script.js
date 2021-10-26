@@ -5,11 +5,10 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 // chiedo all'utente di lanciare il dado
 const userDice = parseInt(prompt("Scrivi '1' per lanciare il dado"));
-
+//selezione div contenitore
 let dice = document.querySelector("#dices");
-console.log(userDice);
+//creazione div contenitore per le successive variabili
 let divCont = document.createElement("div");
-/* dice.append(divCont); */
 
 if (userDice){
     //dado utente
