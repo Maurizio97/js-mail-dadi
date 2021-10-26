@@ -16,9 +16,9 @@ for (let i = 1; i >= 6; i++) {
 
 if (userDice){
     const userDice = Math.floor(Math.random() * 6 + 1);
-    console.log(userDice);
+    console.log("dado user", userDice);
 }
 
     const cpuDice = Math.floor(Math.random() * 6 + 1);
-    console.log(cpuDice);
+    console.log("dado cpu", cpuDice);
     
